@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1328" height="768" viewBox="0 0 1328 768" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+  <title>Awesome IWB 项目横幅卡片</title>
+  <desc>Awesome IWB (Awesome Interactive White Board) 项目的 4 张分类横幅卡片，采用 2x2 网格布局。每张卡片 640x360px，间距 24px，深色背景。可导入 Figma 作为可编辑矢量设计。</desc>
+
+  <defs>
+    <!-- Card backgrounds -->
+    <linearGradient id="grad-about" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="grad-whiteboard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="grad-timetable" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="grad-utilities" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Reusable top-right arrow button (drawn around origin) -->
+    <g id="arrow-btn">
+      <circle cx="0" cy="0" r="18" fill="#000000" fill-opacity="0.35"/>
+      <path d="M -7,0 L 4,0 M 1,-6 L 7,0 L 1,6" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Reusable pen shape (cap at origin, tip pointing +x) -->
+    <path id="pen-shape" d="M 7,-7 Q 0,-7 0,0 Q 0,7 7,7 L 47,7 L 60,0 L 47,-7 Z"/>
+  </defs>
+
+  <!-- ============ Canvas background ============ -->
+  <rect x="0" y="0" width="1328" height="768" fill="#0f1117"/>
+
+  <!-- ============================================================= -->
+  <!-- Card 1 (top-left): 关于 AIWB / About Awesome IWB             -->
+  <!-- ============================================================= -->
+  <g id="card-about">
+    <rect x="0" y="0" width="640" height="360" rx="20" ry="20" fill="url(#grad-about)"/>
+
+    <!-- decorative circle with "i" -->
+    <circle cx="540" cy="180" r="48" fill="#000000" fill-opacity="0.15"/>
+    <text x="540" y="180" font-size="36" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">i</text>
+
+    <!-- title + subtitle -->
+    <text x="40" y="170" font-size="32" font-weight="700" fill="#ffffff">关于 AIWB</text>
+    <text x="40" y="200" font-size="14" fill="#ffffff" fill-opacity="0.7">About Awesome IWB</text>
+  </g>
+
+  <!-- ============================================================= -->
+  <!-- Card 2 (top-right): 屏幕批注与白板软件                        -->
+  <!-- ============================================================= -->
+  <g id="card-whiteboard">
+    <rect x="664" y="0" width="640" height="360" rx="20" ry="20" fill="url(#grad-whiteboard)"/>
+
+    <!-- decorative pen fan -->
+    <circle cx="1180" cy="190" r="48" fill="#000000" fill-opacity="0.12"/>
+    <g transform="translate(1180,238)" fill="#ffffff">
+      <use href="#pen-shape" transform="rotate(-115)" fill-opacity="0.55"/>
+      <use href="#pen-shape" transform="rotate(-90)" fill-opacity="0.95"/>
+      <use href="#pen-shape" transform="rotate(-65)" fill-opacity="0.7"/>
+    </g>
+
+    <!-- title + subtitle -->
+    <text x="704" y="170" font-size="28" font-weight="700" fill="#ffffff">屏幕批注与白板软件</text>
+    <text x="704" y="200" font-size="13" fill="#ffffff" fill-opacity="0.7">Screen Notation &amp; Whiteboard Softwares</text>
+
+    <!-- count badge -->
+    <g id="badge-whiteboard">
+      <rect x="1130" y="14" width="82" height="28" rx="14" ry="14" fill="#000000" fill-opacity="0.25"/>
+      <text x="1171" y="28" font-size="13" fill="#ffffff" text-anchor="middle" dominant-baseline="central">11 个项目</text>
+    </g>
+    <!-- arrow button -->
+    <use href="#arrow-btn" x="1240" y="28"/>
+  </g>
+
+  <!-- ============================================================= -->
+  <!-- Card 3 (bottom-left): 课表与看板类软件                        -->
+  <!-- ============================================================= -->
+  <g id="card-timetable">
+    <rect x="0" y="384" width="640" height="360" rx="20" ry="20" fill="url(#grad-timetable)"/>
+
+    <!-- decorative calendar -->
+    <circle cx="540" cy="534" r="48" fill="#000000" fill-opacity="0.12"/>
+    <g id="cal-icon">
+      <rect x="504" y="502" width="72" height="64" rx="8" ry="8" fill="none" stroke="#ffffff" stroke-opacity="0.85" stroke-width="2.5"/>
+      <!-- header strip (top corners rounded) -->
+      <path d="M 512,502 L 568,502 Q 576,502 576,510 L 576,518 L 504,518 L 504,510 Q 504,502 512,502 Z" fill="#ffffff" fill-opacity="0.25"/>
+      <!-- binding rings -->
+      <rect x="519" y="495" width="5" height="11" rx="2" ry="2" fill="#ffffff" fill-opacity="0.9"/>
+      <rect x="556" y="495" width="5" height="11" rx="2" ry="2" fill="#ffffff" fill-opacity="0.9"/>
+      <!-- grid lines -->
+      <path d="M 522,520 L 522,564 M 540,520 L 540,564 M 558,520 L 558,564 M 506,534 L 574,534 M 506,550 L 574,550" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1.5"/>
+      <!-- highlighted date cells -->
+      <rect x="525" y="522" width="13" height="10" rx="2" ry="2" fill="#ffffff" fill-opacity="0.55"/>
+      <rect x="561" y="538" width="13" height="10" rx="2" ry="2" fill="#ffffff" fill-opacity="0.55"/>
+    </g>
+
+    <!-- title + subtitle -->
+    <text x="40" y="554" font-size="28" font-weight="700" fill="#ffffff">课表与看板类软件</text>
+    <text x="40" y="584" font-size="13" fill="#ffffff" fill-opacity="0.7">Timetable &amp; Dashboard Softwares</text>
+
+    <!-- count badge -->
+    <g id="badge-timetable">
+      <rect x="466" y="398" width="82" height="28" rx="14" ry="14" fill="#000000" fill-opacity="0.25"/>
+      <text x="507" y="412" font-size="13" fill="#ffffff" text-anchor="middle" dominant-baseline="central">11 个项目</text>
+    </g>
+    <!-- arrow button -->
+    <use href="#arrow-btn" x="576" y="412"/>
+  </g>
+
+  <!-- ============================================================= -->
+  <!-- Card 4 (bottom-right): 辅助类软件与实用工具                   -->
+  <!-- ============================================================= -->
+  <g id="card-utilities">
+    <rect x="664" y="384" width="640" height="360" rx="20" ry="20" fill="url(#grad-utilities)"/>
+
+    <!-- decorative gear -->
+    <circle cx="1180" cy="534" r="48" fill="#000000" fill-opacity="0.12"/>
+    <g id="gear-icon" transform="translate(1180,534)">
+      <path d="M 34,0 L 24.02,9.94 L 24.04,24.04 L 9.94,24.02 L 0,34 L -9.94,24.02 L -24.04,24.04 L -24.02,9.94 L -34,0 L -24.02,-9.94 L -24.04,-24.04 L -9.94,-24.02 L 0,-34 L 9.94,-24.02 L 24.04,-24.04 L 24.02,-9.94 Z" fill="#ffffff" fill-opacity="0.9"/>
+      <circle cx="0" cy="0" r="12" fill="#000000" fill-opacity="0.2"/>
+    </g>
+
+    <!-- title + subtitle -->
+    <text x="704" y="554" font-size="28" font-weight="700" fill="#ffffff">辅助类软件与实用工具</text>
+    <text x="704" y="584" font-size="13" fill="#ffffff" fill-opacity="0.7">Utilities &amp; Practical Tools</text>
+
+    <!-- count badge -->
+    <g id="badge-utilities">
+      <rect x="1130" y="398" width="82" height="28" rx="14" ry="14" fill="#000000" fill-opacity="0.25"/>
+      <text x="1171" y="412" font-size="13" fill="#ffffff" text-anchor="middle" dominant-baseline="central">33 个项目</text>
+    </g>
+    <!-- arrow button -->
+    <use href="#arrow-btn" x="1240" y="412"/>
+  </g>
+</svg>

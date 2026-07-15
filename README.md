@@ -17,46 +17,11 @@
 
 ## 设计图展示
 
-> 以下为项目板块导航横图，提供暗色3D、Fluent亚克力、扁平极简三种风格，以及横版和方形两种尺寸。
+> 项目提供暗色3D、Fluent亚克力、扁平极简、亮色等多种风格与尺寸的板块横图。
 
-### 暗色 3D 风格（横版 16:9）
+<a href="docs/themes.html"><img src="assets/styles/hero/banner-main.png" width="800" alt="设计图展示"></a>
 
-<table><tr>
-<td align="center"><img src="assets/banner-whiteboard.png" width="400"><br><b>屏幕批注与白板软件</b></td>
-<td align="center"><img src="assets/banner-timetable.png" width="400"><br><b>课表与看板类软件</b></td>
-</tr><tr>
-<td align="center"><img src="assets/banner-utilities.png" width="400"><br><b>辅助类软件与实用工具</b></td>
-<td align="center"><img src="assets/banner-about.png" width="400"><br><b>关于 AIWB</b></td>
-</tr></table>
-
-### Fluent 亚克力风格（横版 16:9）
-
-<table><tr>
-<td align="center"><img src="assets/styles/fluent/banner-whiteboard.png" width="400"><br><b>白板软件</b></td>
-<td align="center"><img src="assets/styles/fluent/banner-timetable.png" width="400"><br><b>课表看板</b></td>
-</tr><tr>
-<td align="center"><img src="assets/styles/fluent/banner-utilities.png" width="400"><br><b>实用工具</b></td>
-<td align="center"><img src="assets/styles/hero/banner-main.png" width="400"><br><b>主视觉横图</b></td>
-</tr></table>
-
-### 扁平极简风格（横版 16:9）
-
-<table><tr>
-<td align="center"><img src="assets/styles/flat/banner-whiteboard.png" width="400"><br><b>白板软件</b></td>
-<td align="center"><img src="assets/styles/flat/banner-timetable.png" width="400"><br><b>课表看板</b></td>
-</tr><tr>
-<td align="center"><img src="assets/styles/flat/banner-utilities.png" width="400"><br><b>实用工具</b></td>
-<td align="center"><img src="assets/styles/thumb/banner-whiteboard.png" width="200"><br><b>方形缩略图</b></td>
-</tr></table>
-
-### 亮色主题（横版 16:9）与方形版本（1:1）
-
-<table><tr>
-<td align="center"><img src="assets/themes/light/banner-whiteboard.png" width="400"><br><b>亮色 - 白板</b></td>
-<td align="center"><img src="assets/themes/square/banner-whiteboard.png" width="200"><br><b>方形 - 白板</b></td>
-</tr></table>
-
-> 完整主题展示请查看 [docs/themes.html](docs/themes.html)
+> 点击上方横图查看 [完整主题展示](docs/themes.html)
 
 ---
 

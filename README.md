@@ -62,10 +62,17 @@
 
 ## 快速导航
 
+> 点击下方横图即可跳转到对应分类板块
+
 <table><tr>
-<td align="center"><a href="docs/categories/whiteboard.md">✏️<br><b>屏幕批注与白板软件</b><br><sub>Screen Notation & Whiteboard Softwares</sub><br>11 个项目</a></td>
-<td align="center"><a href="docs/categories/timetable.md">📊<br><b>课表与看板类软件</b><br><sub>Timetable & Dashboard Softwares</sub><br>11 个项目</a></td>
-<td align="center"><a href="docs/categories/utilities.md">🛠️<br><b>辅助类软件与实用工具</b><br><sub>Utilities & Practical Tools</sub><br>33 个项目</a></td>
+<td align="center"><a href="docs/categories/whiteboard.md"><img src="assets/themes/light/banner-whiteboard.png" width="400" alt="屏幕批注与白板软件"><br>✏️ <b>屏幕批注与白板软件</b><br><sub>Screen Notation & Whiteboard Softwares · 11 个项目</sub></a></td>
+<td align="center"><a href="docs/categories/timetable.md"><img src="assets/themes/light/banner-timetable.png" width="400" alt="课表与看板类软件"><br>📊 <b>课表与看板类软件</b><br><sub>Timetable & Dashboard Softwares · 11 个项目</sub></a></td>
+<td align="center"><a href="docs/categories/utilities.md"><img src="assets/themes/light/banner-utilities.png" width="400" alt="辅助类软件与实用工具"><br>🛠️ <b>辅助类软件与实用工具</b><br><sub>Utilities & Practical Tools · 33 个项目</sub></a></td>
+</tr></table>
+
+<table><tr>
+<td align="center"><a href="docs/index.md"><img src="assets/themes/light/banner-about.png" width="400" alt="关于 AIWB"><br><b>关于 AIWB</b><br><sub>项目背景与数据规范</sub></a></td>
+<td align="center"><a href="docs/meta/contributing.md"><img src="assets/themes/square/banner-about.png" width="200" alt="贡献指南"><br><b>贡献指南</b><br><sub>如何添加项目</sub></a></td>
 </tr></table>
 
 ## 贡献指南

@@ -129,15 +129,15 @@ function generateDocsIndex() {
   md += `**版本**：${meta.version} | **维护者**：${meta.maintainer} | **协议**：${meta.license}\n\n`;
   md += `---\n\n`;
 
-  // 分类导航
+  // 分类导航 — 亮色主题横图，点击跳转
   md += `## 分类导航\n\n`;
-  md += `| 分类 | 说明 | 项目数 |\n`;
-  md += `|------|------|--------|\n`;
+  md += `> 点击下方横图即可跳转到对应分类板块\n\n`;
+  md += `<table><tr>\n`;
   categories.forEach(cat => {
     const count = getProjectsByCategory(cat.id).length;
-    md += `| ${cat.icon} [${cat.name}](categories/${cat.id}.md) | ${cat.nameEn} | ${count} |\n`;
+    md += `<td align="center"><a href="categories/${cat.id}.md"><img src="../assets/themes/light/banner-${cat.id}.png" width="400" alt="${cat.name}"><br>${cat.icon} <b>${cat.name}</b><br><sub>${cat.nameEn} · ${count} 个项目</sub></a></td>\n`;
   });
-  md += `\n`;
+  md += `</tr></table>\n\n`;
 
   // 全部标签
   md += `## 全部标签\n\n`;
@@ -211,13 +211,20 @@ function generateReadme() {
   md += `> 完整主题展示请查看 [docs/themes.html](docs/themes.html)\n\n`;
   md += `---\n\n`;
 
-  // 快速导航
+  // 快速导航 — 亮色主题横图，点击跳转分类页
   md += `## 快速导航\n\n`;
+  md += `> 点击下方横图即可跳转到对应分类板块\n\n`;
   md += `<table><tr>\n`;
+  const lightMap = { whiteboard: 'whiteboard', timetable: 'timetable', utilities: 'utilities' };
   categories.forEach(cat => {
     const count = getProjectsByCategory(cat.id).length;
-    md += `<td align="center"><a href="docs/categories/${cat.id}.md">${cat.icon}<br><b>${cat.name}</b><br><sub>${cat.nameEn}</sub><br>${count} 个项目</a></td>\n`;
+    const key = lightMap[cat.id] || cat.id;
+    md += `<td align="center"><a href="docs/categories/${cat.id}.md"><img src="assets/themes/light/banner-${key}.png" width="400" alt="${cat.name}"><br>${cat.icon} <b>${cat.name}</b><br><sub>${cat.nameEn} · ${count} 个项目</sub></a></td>\n`;
   });
+  md += `</tr></table>\n\n`;
+  md += `<table><tr>\n`;
+  md += `<td align="center"><a href="docs/index.md"><img src="assets/themes/light/banner-about.png" width="400" alt="关于 AIWB"><br><b>关于 AIWB</b><br><sub>项目背景与数据规范</sub></a></td>\n`;
+  md += `<td align="center"><a href="docs/meta/contributing.md"><img src="assets/themes/square/banner-about.png" width="200" alt="贡献指南"><br><b>贡献指南</b><br><sub>如何添加项目</sub></a></td>\n`;
   md += `</tr></table>\n\n`;
 
   // 贡献指南
